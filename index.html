@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>امتحان أول ثانوي – التربية الإسلامية – مدرسة نتل</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Noto+Naskh+Arabic:wght@400;600&display=swap">
+<style>
+:root{--bg:#f6f4ee;--card:#fff;--ink:#1d2b24;--mute:#5d6b63;--line:#d9d5c7;--g:#1f5c46;--gl:#e3f0ea;--ok:#1b7a43;--okbg:#dff3e5;--no:#b3261e;--nobg:#fbe3e1;--sel:#fff3cf;--selb:#c9972b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14201b;--card:#1c2b25;--ink:#eaf1ed;--mute:#9db0a6;--line:#35483f;--g:#7fcfae;--gl:#24392f;--ok:#7fe0a3;--okbg:#1f4430;--no:#ff9a92;--nobg:#4a2523;--sel:#4a3d1a;--selb:#e2b34e}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Naskh Arabic",serif;font-size:19px;line-height:1.9}
+main{max-width:720px;margin:0 auto;padding:16px 14px 60px}
+h1,h2{font-family:Amiri,serif;margin:0}
+header{border-bottom:3px double var(--g);padding:10px 0 14px;margin-bottom:14px}
+h1{font-size:30px;color:var(--g)}
+header p{margin:0;color:var(--mute);font-size:16px}
+.nm{display:flex;gap:8px;align-items:center;margin:12px 0 0}
+.nm input{flex:1;font:inherit;font-size:18px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+#bar{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:6px 0;z-index:5;font-size:16px;color:var(--mute)}
+#bar i{display:block;height:6px;background:var(--line);border-radius:3px;margin-top:4px;overflow:hidden}
+#bar b{display:block;height:100%;width:0;background:var(--g);transition:width .2s}
+h2{font-size:24px;margin:22px 0 8px;color:var(--g)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+.q p{margin:0 0 6px;font-weight:600}
+.n{color:var(--g);margin-inline-start:6px}
+.o{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:right;font:inherit;font-size:18px;line-height:1.7;background:none;color:inherit;border:1px solid var(--line);border-radius:10px;padding:7px 10px;margin:5px 0;cursor:pointer}
+.o:hover{border-color:var(--g)}
+.o em{font-style:normal;flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--mute);display:grid;place-items:center;font-size:15px;line-height:1;margin-top:4px}
+.o.on{background:var(--gl);border-color:var(--g)}
+.o.on em{border:3px solid var(--g);background:var(--g);color:var(--card)}
+.o:focus-visible,.w:focus-visible,.bl:focus-visible,button.go:focus-visible{outline:3px solid var(--selb);outline-offset:2px}
+.o.ok{background:var(--okbg);border-color:var(--ok)}
+.o.no{background:var(--nobg);border-color:var(--no)}
+.fx{font-size:15px;margin:6px 0 0}
+.fx.ok{color:var(--ok)}.fx.no{color:var(--no)}
+#box{position:sticky;top:calc(env(safe-area-inset-top,0px) + 42px);z-index:4;background:var(--card);border:2px dashed var(--g);border-radius:12px;padding:8px 10px;display:flex;flex-wrap:wrap;gap:8px;min-height:52px;margin:8px 0}
+.w{font:inherit;font-size:18px;background:var(--gl);color:var(--ink);border:1.5px solid var(--g);border-radius:20px;padding:0 14px;cursor:grab;touch-action:manipulation}
+.w.pk{background:var(--sel);border-color:var(--selb)}
+.bl{display:inline-block;min-width:110px;min-height:36px;vertical-align:middle;border:2px dashed var(--mute);border-radius:10px;padding:0 8px;text-align:center;margin:0 4px;cursor:pointer;background:transparent;font:inherit;font-size:18px;color:var(--ink)}
+.bl.ov{background:var(--sel);border-color:var(--selb)}
+.bl.fil{border:2px solid var(--g);background:var(--gl)}
+.bl.ok{border:2px solid var(--ok);background:var(--okbg)}
+.bl.no{border:2px solid var(--no);background:var(--nobg)}
+.hint{font-size:15px;color:var(--mute);margin:0}
+button.go{font:inherit;font-weight:600;font-size:20px;background:var(--g);color:var(--bg);border:0;border-radius:12px;padding:8px 26px;margin-top:18px;cursor:pointer}
+button.go.alt{background:none;color:var(--g);border:2px solid var(--g)}
+#res{display:none;text-align:center;background:var(--card);border:2px solid var(--g);border-radius:16px;padding:18px;margin:16px 0}
+#res .sc{font-family:Amiri,serif;font-size:56px;color:var(--g);line-height:1.2}
+#res p{margin:4px 0}
+.dis{pointer-events:none}
+[hidden]{display:none!important}
+[hidden]{display:none!important}
+#login{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 14px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cg fill='none' stroke='%23c9972b' stroke-opacity='.22'%3E%3Crect x='12' y='12' width='36' height='36'/%3E%3Crect x='12' y='12' width='36' height='36' transform='rotate(45 30 30)'/%3E%3C/g%3E%3C/svg%3E"),radial-gradient(circle at 50% 0,#1f7a5c,#0d3d2e 70%)}
+.lc{width:100%;max-width:420px;background:var(--card);border-radius:220px 220px 24px 24px;padding:56px 26px 28px;text-align:center;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.4);outline:2px solid #c9972b;outline-offset:-10px}
+.em{width:68px;height:68px;display:block;margin:8px auto 2px}
+.lc .sch{font-family:Amiri,serif;font-size:27px;line-height:1.6;color:var(--g);margin:0}
+.orn{display:flex;align-items:center;gap:10px;margin:12px 6px;color:#c9972b}
+.orn i{flex:1;height:1px;background:currentColor;opacity:.6}
+.lc .tt{font-family:Amiri,serif;font-size:31px;line-height:1.45;color:var(--ink);margin:0}
+.tt small{display:block;font-size:23px;color:var(--g)}
+.stf{margin:16px 0 22px}
+.stf div{padding:9px 0}
+.stf{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+.stf .t{grid-column:1/-1;border-top:1px dashed var(--line);margin-top:8px;padding-top:12px}
+.cor{position:absolute;top:12px;right:16px;margin:0;font-size:14px;color:#e8d9a8}
+.stf span{display:block;color:var(--mute);font-size:15px;line-height:1.4}
+.stf b{font-family:Amiri,serif;font-size:24px;line-height:1.5}
+.lc .go{background:#c9972b;color:#1d2b24;width:100%;font-size:21px;margin-top:0}
+</style>
+</head>
+<body>
+<section id="login"><p class="cor">الامتحان الإلكتروني</p><div class="lc">
+<p class="sch">مدرسة نتل الثانوية<br>الشاملة المختلطة</p>
+<div class="orn"><i></i><b>✦</b><i></i></div>
+<h1 class="tt">امتحان أول ثانوي<small>لمادة التربية الإسلامية</small></h1>
+<div class="stf"><div><span>المديرة</span><b>يسرى الدهامشه</b></div><div><span>المشرفة التربوية</span><b>جمانة ابو زيد</b></div><div class="t"><span>المعلمة</span><b>زين الدهامشه</b></div></div>
+<button class="go" id="go">ابدأ الامتحان</button>
+</div></section>
+<main id="exam" hidden>
+<header>
+<h1>امتحان التربية الإسلامية</h1>
+<p>أول ثانوي – مدرسة نتل الثانوية الشاملة المختلطة</p>
+</header>
+<div id="bar"><span id="cnt">أجبت عن 0 من 30</span><i><b id="pg"></b></i></div>
+<h2>القسم الأول: ضع دائرة حول رمز الإجابة الصحيحة</h2>
+<div id="mcq"></div>
+<h2>القسم الثاني: أكمل الفراغ بسحب الكلمة إلى مكانها</h2>
+<p class="hint">اسحب الكلمة من الصندوق إلى الفراغ، أو المس الكلمة ثم المس الفراغ. المس الفراغ المعبّأ لإرجاع الكلمة.</p>
+<div id="box"></div>
+<div id="fill"></div>
+<p id="warn" class="hint" style="color:var(--no)"></p>
+<button class="go" id="sub">إنهاء الامتحان وعرض النتيجة</button>
+<div id="res"></div>
+</main>
+<script>
+const Q=[
+["اللفظ القرآني الذي يعني «حافة الشيء وطرفه» في قوله تعالى: ﴿وَكُنتُمْ عَلَىٰ شَفَا حُفْرَةٍ مِّنَ النَّارِ﴾ هو:",["حفرة","شفا","أنقذكم","البينات"],1],
+["الحكم الشرعي للقيام بفرض «الأمر بالمعروف والنهي عن المنكر» على مستوى الأمة كما بينت آيات سورة آل عمران هو:",["سنة مؤكدة","فرض عين","فرض كفاية","مباح مستحب"],2],
+["المقصود بـ«المشتبهات» كما ورد في شرح الحديث النبوي الشريف هو:",["الأمور التي التبس أمرها وخفي حكمها على كثير من الناس بين الحلال والحرام","المحرمات القطعية التي أجمع العلماء على تحريمها","الواجبات التي كُره فعلها في أوقات مخصوصة","النوافل والمستحبات التي يحرص المسلم على أداءها"],0],
+["إنكار حكم شرعي قطعي معلوم من الدين بالضرورة (كإنكار فرضية الصلاة أو حرمة الزنا) يُصنَّف شرعاً بأنه:",["نفاق عملي","شرك أصغر","كفر اعتقادي (أكبر)","بدعة حسنة"],2],
+["فسّر النبي ﷺ «الشرك الأصغر» في الحديث الشريف المروي عنه بـ:",["إنكار وجود الله تعالى","سب الذات الإلهية","النفاق الاعتقادي","الرياء في العبادات"],3],
+["المظهر التكريمي المذكور في قوله تعالى: ﴿وَلَقَدْ كَرَّمْنَا بَنِي آدَمَ وَحَمَلْنَاهُمْ فِي الْبَرِّ وَالْبَحْرِ﴾ هو:",["تسخير الكون والأنعام والمراكب للإنسان","جعل الإنسان معصوماً عن الخطأ","إيجاب أداء العبادات الشاقة عليه","توفير المال والجاه لجميع البشر"],0],
+["يُقصد بـ«التحريم المؤبد» في النكاح:",["تحريم زواج المرأة لسبب طارئ يزول بزواله","تحريم الجمع بين امرأتين بينهما قرابة","تحريم زواج المرأة المتزوجة حتى تطلق","النساء اللاتي لا يحل للرجل الزواج بإحداهن أبداً لسبب دائم"],3],
+["تحرم «الربيبة» (بنت الزوجة من زوج سابق) تحريماً مؤبداً على الرجل بشرط:",["بمجرد العقد على أمها","الدخول بأمها","بلوغ الربيبة سن الرشد","موافقة أوليائها"],1],
+["الحكم الشرعي لوجوب نفقة المرأة المتزوجة هو أنها واجبة على:",["والدها وإخوانها","زوجها ولو كانت غنية (موسرة)","أبنائها الذكور فقط","بيت مال المسلمين"],1],
+["الحق المالي للمرأة المذكور في قوله تعالى: ﴿لِّلرِّجَالِ نَصِيبٌ مِّمَّا تَرَكَ الْوَالِدَانِ وَالْأَقْرَبُونَ وَلِلنِّسَاءِ نَصِيبٌ مِّمَّا تَرَكَ الْوَالِدَانِ وَالْأَقْرَبُونَ﴾ هو:",["النفقة الواجبة","المهر المسمى","أجرة الرضاعة","الميراث الشرعي"],3],
+["الحكم الشرعي الأصلي للزواج بالنسبة للشخص البالغ القادر عليه هو أنه:",["فرض عين","مندوب (مستحب)","مباح","مكروه"],1],
+["الأساس الأول الذي أوصى النبي ﷺ بمراعاته عند اختيار الزوجة هو:",["الحسب والنسب","المال والجاه","الجمال الظاهر","الدين والأخلاق"],3],
+["الحكم الشرعي الأصلي للجهاد بالمعنى الخاص (مباشرة القتال ومحاربة المعتدين) في الإسلام هو أنه:",["فرض عين","فرض كفاية","سنة مؤكدة","مباح"],1],
+["يتحول الجهاد بالمعنى الخاص إلى «فرض عين» على القادرين من المسلمين في حالة:",["السفر لطلب العلم","إذا أعلنت الدولة النفير العام أو داهم العدو البلاد","المبادرات الشخصية للفرد","الرغبة في تحصيل المغانم"],1],
+["بعث رسول الله ﷺ الصحابي الجليل الحارث بن عمير الأزدي رضي الله عنه برسالة إلى:",["شرحبيل بن عمرو الغسّاني","هرقل الروم","حاكم بُصرى في الشام","كسرى مَلِك الفُرْس"],2],
+["من أمثلة «الرخصة» الشرعية في الممارسات والعبادات الإسلامية:",["أداء الصلوات الخمس تامة في أوقاتها","قصر الصلاة الرباعية في السفر","صيام شهر رمضان للمقيم الصحيح","أداء زكاة الأموال للمستحقين"],1],
+["السبب المباشر لخروج جيش المسلمين في معركة مؤتة سنة 8هـ هو:",["اعتداء الروم على تجار المسلمين في مكة","نقض قريش لبنود صلح الحديبية","محاصرة جيش الروم للمدينة المنورة","قتل أمير الشام لمبعوث رسول الله ﷺ"],3],
+["إحدى الفئات الآتية تعرف حكم المشتبهات:",["الناس كافة","لا أحد من الناس","طلبة العلم","الراسخون في العلم"],3],
+["الخليفة الذي نُقطت في زمنه الحروف المتشابهة في المصحف الشريف هو:",["أبو بكر الصديق","عمر بن الخطاب","عثمان بن عفان","عبد الملك بن مروان"],3],
+["أم المؤمنين التي حُفظ عندها المصحف الشريف بعد جمعه هي السيدة:",["عائشة","ميمونة","حفصة","أم سلمة"],2],
+["تُعد خيانة الأمانة صورة من صور:",["البدعة السيئة","الشرك الأكبر","الشرك الأصغر","النفاق العملي"],3],
+["أحد مبادئ الإسلام لتحقيق الكرامة الإنسانية الذي يشير إليه قوله تعالى: ﴿لَا إِكْرَاهَ فِي الدِّينِ﴾ هو:",["الحرية","المساواة","الأمن","العموم"],0],
+["مظهر التعايش الذي يقوم على التعامل بالمِثل هو التعايش:",["الاجتماعي","السياسي","الدولي","الاقتصادي"],2],
+["وقعت معركة مؤتة في السنة:",["السادسة للهجرة","السابعة للهجرة","الثامنة للهجرة","التاسعة للهجرة"],2],
+["من أسماء سورة آل عمران:",["أمّ الكتاب","الكاشفة","بنو إسرائيل","الزهراء"],3]
+];
+const F=[
+["يُعدّ إظهار العبادة أمام الناس طلباً للمدح هو","، وهو من صفات المنافقين.","الرياء"],
+["كل ما أُحدث في الدين وليس له أصل في الكتاب أو السنة يُسمّى","، ويجب الحذر منه.","البدعة"],
+["","خطره عظيم بالرغم من صغر حجمه، ومنفعته جليلة.","القلب"],
+["اتباع","هو طريق النجاة، والالتزام بما جاء في القرآن والسنة الصحيحة.","السنة"],
+["",": اجتناب الشُّبُهات خوفاً من الوقوع في المُحرَّمات.","الورع"]
+];
+const WORDS=["القلب","النفاق","الورع","الرياء","السنة","البدعة"];
+const L=["أ","ب","ج","د"],$=id=>document.getElementById(id);
+const ans=Array(Q.length).fill(-1),fill=Array(F.length).fill(null);
+let picked=null,done=false;
+function render(){
+ $("mcq").innerHTML=Q.map((q,i)=>`<div class="q" id="q${i}"><p><span class="n">${i+1}.</span>${q[0]}</p>`+q[1].map((t,j)=>`<button class="o ${ans[i]===j?'on':''}" data-i="${i}" data-j="${j}"><em>${L[j]}</em><span>${t}</span></button>`).join("")+`</div>`).join("");
+ $("fill").innerHTML=F.map((f,i)=>`<div class="q"><p><span class="n">${Q.length+i+1}.</span>${f[0]} <button class="bl ${fill[i]?'fil':''}" data-b="${i}">${fill[i]||'&nbsp;'}</button> ${f[1]}</p></div>`).join("");
+ $("box").innerHTML=WORDS.filter(w=>!fill.includes(w)).map(w=>`<button class="w ${picked===w?'pk':''}" draggable="true" data-w="${w}">${w}</button>`).join("")||'<span class="hint">وضعت جميع الكلمات</span>';
+ prog();
+}
+function prog(){const n=ans.filter(a=>a>=0).length+fill.filter(Boolean).length,t=Q.length+F.length;$("cnt").textContent=`أجبت عن ${n} من ${t}`;$("pg").style.width=(n/t*100)+"%"}
+document.addEventListener("click",e=>{
+ if(done)return;
+ const o=e.target.closest(".o"),b=e.target.closest(".bl"),w=e.target.closest(".w");
+ if(o){ans[o.dataset.i]=+o.dataset.j;render();return}
+ if(w){picked=picked===w.dataset.w?null:w.dataset.w;render();return}
+ if(b){const i=+b.dataset.b;if(picked){fill[i]=picked;picked=null}else fill[i]=null;render()}
+});
+document.addEventListener("dragstart",e=>{const w=e.target.closest(".w");if(w){e.dataTransfer.setData("text/plain",w.dataset.w);e.dataTransfer.effectAllowed="move"}});
+document.addEventListener("dragover",e=>{const b=e.target.closest(".bl");if(b&&!done){e.preventDefault();b.classList.add("ov")}});
+document.addEventListener("dragleave",e=>{const b=e.target.closest(".bl");if(b)b.classList.remove("ov")});
+document.addEventListener("drop",e=>{const b=e.target.closest(".bl");if(!b||done)return;e.preventDefault();const w=e.dataTransfer.getData("text/plain");if(WORDS.includes(w)){fill[+b.dataset.b]=w;picked=null;render()}});
+$("sub").onclick=()=>{
+ if(done){location.reload();return}
+ const miss=ans.filter(a=>a<0).length+fill.filter(x=>!x).length;
+ if(miss&&!$("sub").dataset.c){$("warn").textContent=`باقي ${miss} سؤال بدون إجابة. اضغط الزر مرة ثانية للإنهاء، أو أكمل إجاباتك.`;$("sub").dataset.c=1;return}
+ done=true;let s=0;
+ Q.forEach((q,i)=>{const bs=document.querySelectorAll(`#q${i} .o`);bs.forEach((b,j)=>{b.classList.remove("on");if(j===q[2])b.classList.add("ok");else if(j===ans[i])b.classList.add("no")});if(ans[i]===q[2])s++;
+  const d=document.createElement("p");d.className="fx "+(ans[i]===q[2]?"ok":"no");d.textContent=ans[i]===q[2]?"إجابة صحيحة":(ans[i]<0?"لم تجب. الإجابة الصحيحة: ":"إجابتك خاطئة. الإجابة الصحيحة: ")+(ans[i]===q[2]?"":L[q[2]]+") "+q[1][q[2]]);bs[0].parentNode.appendChild(d)});
+ document.querySelectorAll(".bl").forEach((b,i)=>{const r=fill[i]===F[i][2];if(r)s++;b.classList.remove("fil");b.classList.add(r?"ok":"no");if(!r)b.insertAdjacentHTML("afterend",`<span class="fx no"> (الصحيح: ${F[i][2]})</span>`)});
+ document.querySelectorAll(".w").forEach(w=>w.classList.add("dis"));
+ const t=Q.length+F.length,p=Math.round(s/t*100),nm="";
+ $("res").style.display="block";
+ $("res").innerHTML=`<p>${nm?nm+"، ":""}نتيجتك</p><div class="sc">${s} / ${t}</div><p>النسبة المئوية ${p}٪</p><p>${p>=90?"ممتاز، أحسنت":p>=75?"جيد جداً":p>=50?"جيد، راجع الأخطاء أدناه":"راجع الدرس وأعد المحاولة"}</p>`;
+ $("sub").textContent="إعادة الامتحان";$("sub").classList.add("alt");$("warn").textContent="";
+ $("res").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"});
+};
+$("go").onclick=()=>{$("login").hidden=true;$("exam").hidden=false;scrollTo(0,0)};
+render();
+</script>
+</body>
+</html>
